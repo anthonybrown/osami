@@ -6,4 +6,4 @@ var Output = Backbone.Model.extend({
     }
 });
 
-var myTodo = new Output();
+var message = new Output();
