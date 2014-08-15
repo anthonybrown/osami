@@ -1,4 +1,4 @@
-var Todo = Backbone.Model.extend({
+var Output = Backbone.Model.extend({
   initialize: function () {
       var output = document.getElementById('output');
       output.innerHTML += 'I am initialized<br>';
@@ -6,4 +6,4 @@ var Todo = Backbone.Model.extend({
     }
 });
 
-var myTodo = new Todo();
+var myTodo = new Output();
