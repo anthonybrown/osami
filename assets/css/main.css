@@ -80,15 +80,18 @@ section#main {
 
 #content {
   width: 50%;
+  min-width: 500px;
+  max-width: 700px;
   float: left;
-  margin: 1em 0 2em 3em;
+  clear: both;
+  margin: 1em 0 2em .3em;
 }
 
 .sidebar {
   width: 33%;
   float: right;
   clear: none;
-  margin: -88px 5% 0 1em;
+  margin: -88px 3% 0 1em;
 }
 
 
