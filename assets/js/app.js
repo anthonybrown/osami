@@ -79,3 +79,15 @@ var Listen = Backbone.Model.extend({
 });
 
 var myListener = new Listen();
+
+var Person = new Backbone.Model({name: 'Jeremy'});
+
+Person.validate = function (attrs) {
+  if (!attrs.name) return 'I need your name';
+};
+
+Person.set({name: 'Samuel'});
+output.innerHTML += Person.get('name')+'<br>';
+Person.unset('name', {validate: true});
+output.innerHTML += Person.get('name');
+console.log(Person.get('name'));
