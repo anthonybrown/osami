@@ -83,9 +83,10 @@ var myListener = new Listen();
 var Person = new Backbone.Model({name: 'Jeremy'});
 
 Person.validate = function (attrs) {
-  if (!attrs.name) 
+  if (!attrs.name) {
     console.log('Error, name must be provided');
     return output.innerHTML += '<br>Error message: I need your name<br>';
+  }
 };
 
 Person.set({name: 'Samuel'});
