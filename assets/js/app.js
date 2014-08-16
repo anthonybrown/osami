@@ -1,4 +1,6 @@
 var Output = Backbone.Model.extend({
+  tagName: 'li',
+
   initialize: function () {
       var output = document.getElementById('output');
       output.innerHTML += 'I am initialized<br>';
@@ -9,6 +11,8 @@ var Output = Backbone.Model.extend({
 var message = new Output();
 
 var Todo = Backbone.Model.extend({
+  tagName: 'li',
+
   defaults: {
     title: '',
     completed: false
@@ -59,23 +63,19 @@ Person.set({name: 'Bill'}, {silent: true});
 console.log(Person.hasChanged(null));
 
 var Listen = Backbone.Model.extend({
+  tagName: 'li',
+
   defaults: {
     title: '',
     listening: true
   },
 
   initialize: function () {
-    var output = document.getElementById('output');
-    output.innerHTML += '<br>This model has been initialized.<br>';
+    console.log('This model has been initialized.');
     this.on('change', function () {
-      output.innerHTML += '<br>Values for this model have been Changed<br>';
       console.log('- values for this model have been changed');
     });
   }
 });
 
 var myListener = new Listen();
-
-myListener.set({title: 'The Listener is triggered whenever an attribute value changes'}, {listening: true});
-
-output.innerHTML += '<br>Changing more than one attribute at the same time only tiggers the listener once.';
