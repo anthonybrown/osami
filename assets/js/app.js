@@ -46,6 +46,9 @@ myTodo.set({
   completed: true
 });
 
+
+
+
 output.innerHTML += '<br />Todo Title: '+ myTodo.get('title');
 output.innerHTML += '<br />Completed: '+ myTodo.get('completed')+'<br>';
 
@@ -94,3 +97,28 @@ output.innerHTML += '<br>'+ 'Person\'s name: '+ Person.get('name')+'<br>';
 Person.unset('name', {validate: true});
 //output.innerHTML += Person.get('name',{validate: true});
 //console.log(Person.get('name', {validate: true}));
+
+
+var NewTodo = Backbone.Model.extend({
+  defaults: {
+    completed: false
+  },
+
+  validate: function (attributes) {
+    var output = document.getElementById('output');
+    if (attributes.title === undefined) {
+      return output.innerHTML += 'Remember to set a title for your todo.';
+    }
+  },
+
+  initialize: function () {
+    console.log('This model has been initialized.');
+    this.on('invalid', function (model, error) {
+      console.log(error);
+    });
+  }
+});
+
+var myTodo = new NewTodo();
+myTodo.set('completed', true, {validate: true});
+console.log('completed: ' + myTodo.get('completed'));
