@@ -84,11 +84,12 @@ var Person = new Backbone.Model({name: 'Jeremy'});
 
 Person.validate = function (attrs) {
   if (!attrs.name) 
-    return console.log('I need your name');
+    console.log('Error, name must be provided');
+    return output.innerHTML += '<br>Error message: I need your name<br>';
 };
 
 Person.set({name: 'Samuel'});
-output.innerHTML += Person.get('name')+'<br>';
+output.innerHTML += '<br>'+ 'Person\'s name: '+ Person.get('name')+'<br>';
 Person.unset('name', {validate: true});
-output.innerHTML += Person.get('name',{validate: true});
-console.log(Person.get('name', {validate: true}));
+//output.innerHTML += Person.get('name',{validate: true});
+//console.log(Person.get('name', {validate: true}));
