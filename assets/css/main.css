@@ -139,9 +139,9 @@ section#main {
   @media only screen and (min-width: 47.938em) {
     .sidebar {
       width: 33%;
-      max-width: 350px;
+      max-width: 330px;
       float: right;
-      margin: 1em 3.75em 0 1em;
+      margin: 1em 4em 0 1em;
       padding: 1em;
     }
   }
