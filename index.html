@@ -29,6 +29,12 @@
       <h1>Main Content</h1>
       <section id="content">
         <p>This is some content from Backbone.js</p>
+        <script type='text/template'id='item-template'>
+          <div>
+            <input type="checkbox" id="todo_complete" <%= completed ? 'checked="checked"' : '' %>>
+            <%= title %>
+          </div>
+        </script>
         <ul id="output"></ul>
         <footer>
           <p>We are simple outputting from a Backbone model without using any views yet.</p>
@@ -43,5 +49,6 @@
     <h2>Main footer</h2>
   </footer>
   <script src='assets/js/app.js'></script>
+  <script src='assets/js/view.js'></script>
 </body>
 </html>
