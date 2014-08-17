@@ -155,7 +155,7 @@ section#main {
 
     .sidebar {
       width: 33%;
-      max-width: 300px;
+      max-width: 240px;
       min-width: 200px;
       float: left;
       margin: 1em .5em 0 .8em;
