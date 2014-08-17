@@ -93,11 +93,9 @@ section#main {
   ========================================================================*/
 
 #content {
-  width: 50%;
-  min-width: 398px;
-  max-width: 550px;
-  float: left;
-  margin: 1em 0 2em;
+  width: 80%;
+  margin: 1em 1em 2em 0;
+  background: rgba(213, 213, 213, 0.18);
 }
   #content ul {
     margin-left: 0;
@@ -109,7 +107,6 @@ section#main {
 #output {
   margin-left: -20px;
 }
-
 
 .sidebar {
   float: left;
@@ -136,11 +133,32 @@ section#main {
    Author
   ========================================================================*/
 
-  @media only screen and (min-width: 35em) {
+  @media only screen and (min-width: 45em) {
+    #content {
+      width: 60%;
+      min-width: 522px;
+      max-width: 1040px;
+      float: left;
+      margin: 1em 0 2em;
+      background: rgba(213, 213, 213, 0.18);
+    }
+      #content ul {
+        margin-left: 0;
+      }
+      #content li {
+        margin-left: 0;
+      }
+
+#output {
+  margin-left: -20px;
+}
+
     .sidebar {
       width: 33%;
-      float: right;
-      margin: 0 .5em 0;
+      max-width: 300px;
+      min-width: 200px;
+      float: left;
+      margin: 1em .5em 0 .8em;
       padding: 1em;
     }
   }
