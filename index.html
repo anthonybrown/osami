@@ -13,7 +13,7 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav class='clearfix'>
       <ul>
         <li><a href="#">home</a></li>
         <li><a href="#">about</a></li>
@@ -25,9 +25,8 @@
     <h2>Web developer</h2>
   </header>
   <section id="main">
-    <article>
+    <article id="content" class='clearfix'>
       <h1>Main Content</h1>
-      <section id="content">
         <p>This is some content from Backbone.js</p>
         <script type='text/template'id='item-template'>
           <div>
@@ -39,7 +38,6 @@
         <footer>
           <p>We are simple outputting from a Backbone model without using any views yet.</p>
         </footer>
-      </section>
     </article>
     <aside class="sidebar">
       <h2>I'm the sidebar</h2>

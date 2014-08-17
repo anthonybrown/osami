@@ -55,17 +55,30 @@ btn1.trigger('click');
 btn2.trigger('click');
 
 var testView = new Backbone.View();
-view.setElement('<p><a><b>test</b></a></p>');
+testView.setElement('<p><a><b>This is just a test</b></a></p>');
+var side = $('.sidebar');
 console.log(testView.$('a b').html());
+//side.innerHTML += testView.$('a b').html();
+side.append(testView.$('a b').html());
 
-var ListView = Backbone.View.extend({
+var TodosView = Backbone.View.extend({
+  tagname: 'ul',
+  className: 'container',
+  id: 'todos'
+});
+
+var todosView = new TodosView({el: $('.sidebar')});
+//var output = document.getElementById('output');
+console.log(todosView.el);
+
+//var ListView = Backbone.View.extend({
   // Compile a template for this view.
   // ... is a placeholder for a template such as
   // $('#list_template').html()
-  template: _.template('...'),
+//  template: _.template('...'),
 
-  render: function () {
-    this.$el.html(this.template(this.model.attributes));
-    return this;
-  }
-});
+//  render: function () {
+//    this.$el.html(this.template(this.model.attributes));
+//    return this;
+//  }
+//});
