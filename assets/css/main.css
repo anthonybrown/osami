@@ -93,10 +93,7 @@ section#main {
   ========================================================================*/
 
 #content {
-  width: 50%;
-  min-width: 398px;
-  max-width: 550px;
-  float: left;
+  width: 80%;
   margin: 1em 0 2em;
   background-color:rgba(139, 136, 136, 0.09);
 }
@@ -138,6 +135,13 @@ section#main {
   ========================================================================*/
 
   @media only screen and (min-width: 47.938em) {
+    #content {
+      width: 50%;
+      min-width: 398px;
+      max-width: 550px;
+      float: left;
+      margin: 1em 0 2em;
+    }
     .sidebar {
       width: 33%;
       max-width: 330px;
