@@ -138,13 +138,13 @@ section#main {
     #content {
       width: 50%;
       min-width: 398px;
-      max-width: 550px;
+      max-width: 700px;
       float: left;
       margin: 1em 0 2em;
     }
     .sidebar {
       width: 33%;
-      max-width: 330px;
+      max-width: 430px;
       float: right;
       margin: 1em 4em 0 1em;
       padding: 1em;
