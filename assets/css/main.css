@@ -135,9 +135,9 @@ section#main {
 
   @media only screen and (min-width: 47.938em) {
     #content {
-      width: 50%;
+      width: 60%;
       min-width: 398px;
-      max-width: 700px;
+      max-width: 510px;
       float: left;
       margin: 1em 0 2em;
       padding: 1em;
