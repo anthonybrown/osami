@@ -96,6 +96,7 @@ section#main {
   width: 80%;
   margin: 1em 0 2em;
   background-color:rgba(139, 136, 136, 0.09);
+  padding: .3em;
 }
   #content ul {
     margin-left: 0;
