@@ -96,7 +96,7 @@ section#main {
   width: 80%;
   margin: 1em 0 2em;
   background-color:rgba(139, 136, 136, 0.09);
-  padding: .3em;
+  padding: 1em;
 }
   #content ul {
     margin-left: 0;
@@ -112,7 +112,7 @@ section#main {
 
 .sidebar {
   float: left;
-  width: 77%;
+  width: 81%;
   background: rgba(136, 131, 131, 0.19);
   padding: .7em;
 }
@@ -140,13 +140,13 @@ section#main {
       max-width: 700px;
       float: left;
       margin: 1em 0 2em;
+      padding: 1em;
     }
     .sidebar {
       width: 33%;
       max-width: 370px;
       float: right;
-      margin: 1em 3.85em 0 1em;
-      padding: 1em;
+      margin: 1em 3.85em 0 0;
     }
   }
 
